@@ -1,0 +1,10 @@
+# webcrawler
+基于scrapy的大规模定向爬虫
+
+最大特色是使用代理ip,避免了网站的反爬虫策略。
+
+其中ipport_spider实现了爬取公网代理ip,存储在redis中
+
+soufang_spider实现了定向爬取搜房网信息和图片，从redis中获取代理ip
+
+爬取的数据存储在mysql和mongo中
